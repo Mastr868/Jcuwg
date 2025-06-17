@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سایت اشتراک‌گذاری محتوا</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- آیکون منو همبرگری از فونت آوسام -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- هدر با منوی همبرگری -->
+    <header>
+        <nav>
+            <div class="logo">LOGO</div>
+            <div class="hamburger-menu" id="hamburgerMenu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#" id="loginLink">ورود / ثبت‌نام</a></li>
+                <li><a href="#">پروفایل</a></li>
+                <li><a href="#">تنظیمات</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- محتوای اصلی -->
+    <main>
+        <div class="content">
+            <h1>محتوای دوستان را کشف کنید!</h1>
+            <div class="media-grid">
+                <div class="media-item">📷 عکس نمونه</div>
+                <div class="media-item">🎥 فیلم نمونه</div>
+            </div>
+            <!-- دکمه انتشار (اگر کاربر لاگین نکرده باشد) -->
+            <button class="upload-btn" id="uploadBtn">+ انتشار محتوا</button>
+        </div>
+    </main>
+
+    <!-- صفحه لاگین (مخفی شده) -->
+    <div class="login-popup" id="loginPopup">
+        <div class="login-box">
+            <h2>ورود به حساب کاربری</h2>
+            <form>
+                <input type="text" placeholder="ایمیل یا نام کاربری">
+                <input type="password" placeholder="رمز عبور">
+                <button type="submit">ورود</button>
+            </form>
+            <span class="close-btn" id="closeLoginPopup">×</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+                      </html>
